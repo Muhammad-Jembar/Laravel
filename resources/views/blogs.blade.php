@@ -1,6 +1,7 @@
 @extends('layout.main')
 
 @section('container')
+
    @foreach ($posts as $nama)
        <article>
        <h1><a href="/about">{{ $nama["title"] }}</a>

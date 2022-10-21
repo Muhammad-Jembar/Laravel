@@ -3,16 +3,16 @@
 
 
 @section('container')  
-<article>
- <h1>{{ $posts->title}}</h1>
 
-  <p>By : Muhammad Jembar Risky in <a href="/categories/{{ $posts->category->slug}}"> {{ $posts->category->name}}</a></p>
+ <h1>{{ $post->title}}</h1>
+
+  <p>By : Muhammad Jembar Risky in <a href="/categories/{{ $post->category->slug}}">{{ $post->category->name}}</a></p>
  
- {{ $posts->body}}
+ {!! $post->body !!}
 
-</article>
 
-<a  href="/blog">kembali</a>
+
+<a  href="/posts">kembali</a>
 @endsection
 
 
