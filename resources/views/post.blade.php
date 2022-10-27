@@ -12,7 +12,7 @@
 
 
 
-<a  href="/posts">kembali</a>
+<a  href="/blog">kembali</a>
 @endsection
 
 
