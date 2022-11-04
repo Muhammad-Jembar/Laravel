@@ -60,18 +60,17 @@ Route::get('/categories', function(){
 });
 
 Route::get('/categories/{category:slug}', function(Category $category){
-    return view('category', [ 
-        'title' => $category->name,
+    return view('posts', [ 
+        'title' => "Post By Category : $category->name",
         'posts' => $category->posts,
-        'category' => $category->name
     ]);
 });
 
 
-Route::get('/authors/{user}', function(User $user){
+Route::get('/authors/{author:username}', function(User $author){
     return view('posts', [ 
-        'title' => 'User Posts',
-        'posts' => $user->posts,
+        'title' => "Post By Author : $author->name",
+        'posts' => $author->posts,
     ]);
 });
 
