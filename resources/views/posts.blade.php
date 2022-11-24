@@ -73,6 +73,8 @@
   <p class="text-center">No post found.</p>
   @endif
 
+  {{ $posts->links()}}
+
   @endsection
 {{-- @foreach ($posts->skip(1) as $post)
 
